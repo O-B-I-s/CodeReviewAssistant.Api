@@ -1,0 +1,32 @@
+<div class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-orange-400 via-purple-500 to-blue-400 p-6 text-white">
+  <!-- Navbar -->
+  <nav class="absolute top-0 left-0 w-full flex justify-between items-center px-10 py-5 bg-transparent">
+    <div class="text-2xl font-bold">CodeReview AI</div>
+    <ul class="flex space-x-6 text-lg">
+      <li><a href="#" class="hover:underline">Products</a></li>
+      <li><a href="#" class="hover:underline">Developers</a></li>
+      <li><a href="#" class="hover:underline">Company</a></li>
+      <li><a href="#" class="hover:underline">Pricing</a></li>
+    </ul>
+    <button class="bg-white text-black px-5 py-2 rounded-full shadow-md hover:bg-gray-200 transition">Sign in</button>
+  </nav>
+
+  <!-- Centered Content -->
+  <div class="text-center max-w-3xl">
+    <h1 class="text-6xl font-bold leading-tight">
+      <span id="animatedText" class="block"> AI-Powered Code Review Assistant</span>
+    </h1>
+    <p class="mt-6 text-xl">
+      Leverage AI-driven insights to detect issues, improve your code, and streamline your development process. Built by Johnson Obioma
+    </p>
+    <div class="mt-8 flex space-x-4 justify-center">
+      <button class="bg-black text-white px-6 py-3 rounded-full shadow-lg hover:bg-gray-900 transition">Start now →</button>
+      <button class="border border-white text-white px-6 py-3 rounded-full shadow-lg hover:bg-white hover:text-black transition">Contact sales</button>
+    </div>
+  </div>
+  <div>
+    <ul>
+      <li *ngFor="let item of codeReview">{{ item. }}</li>
+    </ul>
+  </div>
+</div>
